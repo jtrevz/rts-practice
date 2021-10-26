@@ -1,12 +1,12 @@
 let testString = "jennytrevizo"
-let testInput = 2;
+let testInput = 6;
 
 function rotateString (string, input) {
     let sliceString = string.slice(-(input))
     let normString = string.slice(0,((string.length) - input))
     let rotatedString = ''
 
-    for (let i = sliceString.length - 1; i >= 0; i--) {
+    for (let i = 0; i < sliceString.length; i++) {
         rotatedString += sliceString[i]
     } 
     
@@ -14,6 +14,7 @@ function rotateString (string, input) {
         console.log(rotatedString)
     }
     else{
+
         console.log(rotatedString + normString);
     }
 }
@@ -24,3 +25,5 @@ function rotateString (string, input) {
 //return after adding it to the beginning
 
 rotateString(testString,testInput)
+
+
